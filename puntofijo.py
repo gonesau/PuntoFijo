@@ -60,7 +60,7 @@ class PuntoFijoApp:
         self.tree.heading('Tolerancia', text='Tolerancia')
         self.tree.pack(side='left', fill='both')
 
-        self.fig, self.ax = plt.subplots(figsize=(6, 3))
+        self.fig, self.ax = plt.subplots(figsize=(6, 2))
         self.canvas = FigureCanvasTkAgg(self.fig, master=master)
         self.canvas.get_tk_widget().grid(row=6, column=0, columnspan=2, padx=10, pady=10)
 
@@ -149,3 +149,4 @@ if __name__ == "__main__":
     root = tk.Tk()
     app = PuntoFijoApp(root)
     root.mainloop()
+
